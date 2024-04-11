@@ -1,10 +1,20 @@
 import React from 'react'
 
-import { UsersType } from '../App'
+import { UsersType } from '../App';
 
-export default function Child({ check: Array<UsersType> }) {
+interface ChildProps {
+    users: UsersType[]
+}
+
+
+const Child: React.FC<ChildProps> = ({ users }) => {
+    console.log(users);
+
 
     return (
-        <div>{check}</div>
+        <div></div>
     )
 }
+
+
+export default Child;

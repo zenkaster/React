@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Child from "./components/Child";
 
 
@@ -41,6 +41,11 @@ export default function App() {
     },
   ]
 
+  const test = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    console.log(e.target.value);
+
+  }
+
 
 
   return (
@@ -48,7 +53,8 @@ export default function App() {
       {bool && num} <br />
       <button onClick={() => setBool(!bool)}>Change</button>
       <button onClick={() => foo(3, 'hello world')}>Call Foo</button>
-      <Child check={users} />
+      <input type="text" onChange={test} />
+      <Child users={users} />
     </div>
   )
 }
