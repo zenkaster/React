@@ -30,7 +30,8 @@ class App extends Component {
           name: 'Dean',
           age: 27
         },
-      ]
+      ],
+      foo: this.counter + 1
     }
   }
 
@@ -49,6 +50,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        {this.state.foo}
         {this.state.showStr && this.state.str}
         {this.state.counter}
         <button onClick={this.incriment}>+</button>
@@ -62,4 +64,3 @@ class App extends Component {
 }
 
 export default App;
-  

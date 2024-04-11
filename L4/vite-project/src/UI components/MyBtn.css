@@ -1,0 +1,23 @@
+.defaultBtn {
+    /* width: 150px; */
+    height: 50px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: #888;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .defaultBtn:hover {
+    background-color: white;
+    color: #888;
+  }
+  
+  .defaultBtn img { 
+    width: 50px;
+    height: 50px;
+  
+  }
